@@ -34,7 +34,7 @@ return {
           "helm_ls",
           "jsonls",
           -- "jtdls",
-          "tsserver",
+          "ts_ls",
           "ltex",
           "autotools_ls",
           "rust_analyzer",
@@ -82,7 +82,7 @@ return {
         capabilities = capabilities,
       })
       -- lspconfig.jtdls.setup({})
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
       lspconfig.ltex.setup({
