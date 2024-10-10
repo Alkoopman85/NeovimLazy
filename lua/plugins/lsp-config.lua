@@ -24,7 +24,6 @@ return {
           "lua_ls",
           "ansiblels",
           "pyright",
-          "ruff",
           "bashls",
           "clangd",
           "cmake",
@@ -55,9 +54,6 @@ return {
         capabilities = capabilities,
       })
       lspconfig.pyright.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.ruff.setup({
         capabilities = capabilities,
       })
       lspconfig.bashls.setup({
