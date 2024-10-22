@@ -21,7 +21,7 @@ and I execute the command:
 ./pylint --disable=import-error --generate-rcfile > ~/.pylintrc
 ```
 
-There are many other optinos that can be found here: [pylint config: "https://pylint.pycqa.org/en/stable/user_guide/configuration/all-options.html"]
+There are many other optinos that can be found here: [pylint config](https://pylint.pycqa.org/en/stable/user_guide/configuration/all-options.html)
 This disables import errors and creates a config file for the user.
 pyright will be able to determine the correct virtual environment to
 resolve imports depending on the activated python environment when
