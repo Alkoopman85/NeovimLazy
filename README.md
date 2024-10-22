@@ -10,7 +10,19 @@ type hinting and displaying documetnation on hover. It uses pylint
 for code analysis. They have some overlapping functionality mainly
 resolving imports. To overcome this after installing pylint via Mason
 in neovim I navigate to the folder containing the pylint executable:
-`~/.local/share/nvim/mason/packages/pylint/venv/bin`
+
+```bash
+cd ~/.local/share/nvim/mason/packages/pylint/venv/bin
+```
+
 and I execute the command:
-`./pylint --disable=import-error --generate-rcfile > ~/.pylintrc`
+
+```bash
+./pylint --disable=import-error --generate-rcfile > ~/.pylintrc
+```
+
+There are many other optinos that can be found here: [pylint config "https://pylint.pycqa.org/en/stable/user_guide/configuration/all-options.html"]
 This disables import errors and creates a config file for the user.
+pyright will be able to determine the correct virtual environment to
+resolve imports depending on the activated python environment when
+opeining a project in neovim.
