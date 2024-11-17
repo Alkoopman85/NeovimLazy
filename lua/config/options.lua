@@ -5,6 +5,8 @@ vim.g.maplocalleader = "\\"
 
 local opt = vim.opt
 
+opt.swapfile = false
+
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 
 opt.mouse = "a"
