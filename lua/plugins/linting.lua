@@ -18,6 +18,7 @@ return {
 			--lua = { "luacheck" },
 			markdown = { "markdownlint" },
 			ansible = { "ansible_lint" },
+			yaml = { "yamllint" },
 			sql = { "sqlfluff" },
 		}
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

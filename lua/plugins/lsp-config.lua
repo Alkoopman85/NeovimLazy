@@ -37,6 +37,7 @@ return {
 					"ltex",
 					"autotools_ls",
 					"rust_analyzer",
+					"yamlls",
 				},
 			})
 		end,
@@ -52,6 +53,33 @@ return {
 			})
 			lspconfig.ansiblels.setup({
 				capabilities = capabilities,
+				filetypes = {
+					"yaml",
+					"yaml.ansible",
+				},
+				settings = {
+					{
+						ansible = {
+							ansible = {
+								path = "ansible",
+							},
+							executionEnvironment = {
+								enabled = false,
+							},
+							python = {
+								interpreterPath = "python",
+							},
+							validation = {
+								enabled = true,
+								lint = {
+									enabled = true,
+									path = "ansible-lint",
+									arguments = "",
+								},
+							},
+						},
+					},
+				},
 			})
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
@@ -88,6 +116,9 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.yamlls.setup({
 				capabilities = capabilities,
 			})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
