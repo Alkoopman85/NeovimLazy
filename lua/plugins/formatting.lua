@@ -23,6 +23,7 @@ return {
 				java = { "clang_format" },
 				rust = { "rustfmt" },
 				sql = { "sqlfmt" },
+				bash = { "shfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

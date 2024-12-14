@@ -20,6 +20,7 @@ return {
 			ansible = { "ansible_lint" },
 			yaml = { "yamllint" },
 			sql = { "sqlfluff" },
+			bash = { "shellcheck" },
 		}
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
