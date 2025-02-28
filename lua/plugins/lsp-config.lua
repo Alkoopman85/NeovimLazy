@@ -33,9 +33,7 @@ return {
 					"helm_ls",
 					"jsonls",
 					"jdtls",
-					"ts_ls",
 					"ltex",
-					"autotools_ls",
 					"rust_analyzer",
 					"yamlls",
 				},
@@ -96,6 +94,9 @@ return {
 			lspconfig.dockerls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.docker_compose_language_service.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
@@ -106,13 +107,7 @@ return {
 				capabilities = capabilities,
 			})
 			-- lspconfig.jtdls.setup({})
-			lspconfig.ts_ls.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.ltex.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.autotools_ls.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
