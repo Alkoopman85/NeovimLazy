@@ -12,7 +12,6 @@ return {
 			cmake = { "cmakelint" },
 			cpp = { "cpplint" },
 			--lua = { "luacheck" },
-			markdown = { "markdownlint" },
 			ansible = { "ansible_lint" },
 			yaml = { "yamllint" },
 			sql = { "sqlfluff" },

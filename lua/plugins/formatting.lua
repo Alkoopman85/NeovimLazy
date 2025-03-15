@@ -8,7 +8,6 @@ return {
 			formatters_by_ft = {
 				json = { "prettier" },
 				yaml = { "prettier" },
-				markdown = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				cpp = { "clang_format" },
